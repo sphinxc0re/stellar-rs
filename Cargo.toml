@@ -4,3 +4,4 @@ version = "0.1.0"
 authors = ["Julian Laubstein <contact@julianlaubstein.de>"]
 
 [dependencies]
+byte_sha = "1.0.1"
