@@ -5,7 +5,7 @@ const TESTNET: &str = "Test SDF Network ; September 2015";
 
 /// Network class is used to specify which Stellar network you want to use.
 /// Each network has a `network_passphrase` which is hashed to every transaction id.
-struct Network {
+pub struct Network {
     network_passphrase: String,
 }
 

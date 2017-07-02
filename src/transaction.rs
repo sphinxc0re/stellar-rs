@@ -5,7 +5,7 @@ use operation::Operation;
 
 const BASE_FEE: Integer = 100;
 
-// Represents a <a href="https://www.stellar.org/developers/learn/concepts/transactions.html" target="_blank">Transaction</a> in the Stellar network
+/// Represents a <a href="https://www.stellar.org/developers/learn/concepts/transactions.html" target="_blank">Transaction</a> in the Stellar network
 pub struct Transaction {
     fee: Integer,
     source_account: KeyPair,
@@ -16,11 +16,12 @@ pub struct Transaction {
 }
 
 impl Transaction {
-    pub fn new(source_account: KeyPair,
-               sequence_number: Long,
-               operations: Vec<Operation>,
-               memo: Memo)
-               -> Transaction {
+    pub fn new(
+        source_account: KeyPair,
+        sequence_number: Long,
+        operations: Vec<Operation>,
+        memo: Memo,
+    ) -> Transaction {
         let num_operations = operations.len();
 
         Transaction {
