@@ -1,6 +1,6 @@
 [package]
 name = "stellar"
-version = "0.1.0"
+version = "0.1.0-alpha"
 authors = ["Julian Laubstein <contact@julianlaubstein.de>"]
 description = "Stellar client library for the Rust programming language"
 repository = "https://github.com/sphinxc0re/stellar-rs"
