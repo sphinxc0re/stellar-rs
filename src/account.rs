@@ -2,7 +2,7 @@ use types::Long;
 use key_pair::KeyPair;
 use transaction_builder_account::TransactionBuilderAccount;
 
-// Represents an account in Stellar network with it's sequence number.
+/// Represents an account in Stellar network with it's sequence number.
 #[derive(Clone)]
 pub struct Account {
     key_pair: KeyPair,
@@ -10,7 +10,7 @@ pub struct Account {
 }
 
 impl Account {
-    // Constructs a new `Account`
+    /// Constructs a new `Account`
     pub fn new(key_pair: KeyPair, sequence_number: Long) -> Account {
         Account {
             key_pair,

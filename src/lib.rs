@@ -1,4 +1,4 @@
-extern crate byte_sha;
+extern crate crypto;
 
 pub mod types;
 pub mod key_pair;
